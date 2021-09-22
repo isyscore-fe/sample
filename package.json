@@ -5,6 +5,7 @@
     "scripts": {
         "lint": "echo '代码检查...'",
         "test": "echo '单元测试...'",
+        "build": "echo '工程构建...'",
         "release": "standard-version"
     },
     "keywords": [
