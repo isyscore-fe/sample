@@ -3,10 +3,10 @@ name: code-review
 on:
   push:
     branches:
-      - v1.x
+      - v*.x
   pull_request:
     branches:
-      - v1.x
+      - v*.x
 
 jobs:
   corde-review:
