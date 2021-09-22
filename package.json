@@ -1,0 +1,19 @@
+{
+    "name": "@isyscore/sample",
+    "version": "1.0.0",
+    "description": "一个样例项目",
+    "scripts": {
+        "lint": "echo '代码检查...'",
+        "test": "echo '单元测试...'"
+    },
+    "keywords": [
+        "isyscore"
+    ],
+    "author": "张云来 <zhangyl@isyscore.com>",
+    "homepage": "https://github.com/isyscore-fe/sample",
+    "repository": "https://github.com/isyscore-fe/sample",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {},
+    "peerDependencies": {}
+}
