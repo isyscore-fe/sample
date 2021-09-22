@@ -1,0 +1,28 @@
+name: project-release
+
+on:
+  workflow_dispatch:
+    inputs:
+      projectName:
+        description: 请确认当前分支最新代码已经通过了 core-review，然后输入即将要发布的工程名称
+        required: true
+        default: ""
+
+jobs:
+  project-release:
+    if: github.event.inputs.projectName == github.event.repository.name
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.ISYSCORE_GITHUB_TOKEN }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run test
+      - run: git config user.name isyscore-fe
+      - run: git config user.email isyscore-fe@isyscore.com
+      - run: npm run release
+      - run: git push --follow-tags
