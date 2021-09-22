@@ -4,7 +4,8 @@
     "description": "一个样例项目",
     "scripts": {
         "lint": "echo '代码检查...'",
-        "test": "echo '单元测试...'"
+        "test": "echo '单元测试...'",
+        "release": "standard-version"
     },
     "keywords": [
         "isyscore"
