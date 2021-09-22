@@ -15,7 +15,7 @@ jobs:
           node-version: 14
       - run: npm ci
       - run: npm run build
-      - run: echo '//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}' > .npmrc
+      - run: echo '//registry.npmjs.org/:_authToken=${{ secrets.ISYSCORE_NPM_TOKEN }}' > .npmrc
       - run: npm publish --access=public --registry=https://registry.npmjs.org
 
   create-github-release:
