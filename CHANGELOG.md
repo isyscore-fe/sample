@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.2.2 (2021-09-22)
+
+
+### Bug Fixes
+
+* 修复 github token ([13695f5](https://github.com/isyscore-fe/sample/commit/13695f5de3d950b177bbf22b84b486015bca3eae))
+
 ### 1.2.1 (2021-09-22)
 
 ## 1.2.0 (2021-09-22)
